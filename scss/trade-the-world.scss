@@ -1,0 +1,305 @@
+.trade-the-world {
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__info {
+    z-index: 10;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+
+  &__trading {
+    font-family: Gilroy, sans-serif;
+    font-weight: 400;
+    line-height: 43px;
+    letter-spacing: 0.1em;
+  }
+
+  &__info-text {
+    font-weight: 400;
+    color: #777;
+    letter-spacing: 0.05em;
+  }
+
+  &__demo-acc {
+    width: 240px;
+    height: 56px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    background: rgba(204, 204, 204, 0.05);
+  }
+
+  &__open-acc {
+    width: 244px;
+    height: 56px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    background-color: #ff3939;
+  }
+
+  &__info-sub-text {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 19px;
+    color: #777;
+  }
+
+  &__dashboard {
+    width: 738px;
+    opacity: 0;
+    animation: rotateInUpLeft 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+
+  &__speed-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 166px;
+    margin-top: 118px;
+    border-top: 3px solid #f80000;
+  }
+
+  &__speed-timing {
+    font-weight: 500;
+  }
+
+  &__speed-red-text {
+    color: red;
+  }
+
+  &__speed-text {
+    font-size: 18px;
+    line-height: 30px;
+    opacity: 0.75;
+  }
+
+  &__speed-open-acc {
+    width: 197px;
+    height: 56px;
+    background: rgba(204, 204, 204, 0.05);
+  }
+
+  &__bg-img1 {
+    position: absolute;
+    top: 210px;
+    right: 360px;
+    z-index: -1;
+    width: 1290px;
+  }
+
+  &__bg-img2 {
+    position: absolute;
+    right: 170px;
+    bottom: 20px;
+    z-index: -1;
+    width: 1268px;
+  }
+}
+
+@media (min-width: 320px) {
+  .trade-the-world {
+    padding-top: 50px;
+
+    &__info {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &__trading {
+      width: 290px;
+      margin: 0 auto;
+      font-size: 26px;
+    }
+
+    &__info-text {
+      width: 290px;
+      margin: 30px auto;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__btn-box {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 35px;
+    }
+
+    &__dashboard {
+      display: block;
+      width: 90vw;
+      margin: 50px auto 0;
+    }
+
+    &__speed-box {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    &__speed-info {
+      text-align: center;
+    }
+
+    &__speed-timing {
+      margin-bottom: 15px;
+      font-size: 21px;
+      line-height: 36px;
+      text-align: center;
+    }
+
+    &__speed-text {
+      font-size: 15px;
+    }
+
+    &__speed-open-acc {
+      margin-top: 25px;
+    }
+
+    &__bg-img1 {
+      right: -345px;
+      bottom: 200px;
+    }
+
+    &__bg-img2 {
+      right: -95px;
+      bottom: 0;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .trade-the-world {
+    position: relative;
+    z-index: 5;
+    padding-top: 90px;
+
+    &__title {
+      font-size: 64px;
+      line-height: 79px;
+    }
+
+    &__trading {
+      width: 455px;
+      margin: 0 0 18px 0;
+      font-size: 26px;
+      font-size: 36px;
+    }
+
+    &__info-text {
+      width: 480px;
+      margin: 0 0 50px 0;
+      font-size: 20px;
+      line-height: 29px;
+    }
+
+    &__speed-box {
+      margin-top: 118px;
+      margin-bottom: 151px;
+    }
+
+    &__speed-text {
+      font-size: 18px;
+    }
+
+    &__speed-timing {
+      font-size: 26px;
+    }
+
+    &__speed-open-acc {
+      margin-top: 0;
+    }
+
+    &__bg-img1 {
+      top: 196px;
+      right: -55px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .trade-the-world {
+    &__info {
+      margin-left: 0;
+      text-align: left;
+    }
+
+    &__top {
+      position: relative;
+    }
+
+    &__dashboard {
+      position: absolute;
+      top: 25px;
+      right: 30px;
+      width: 630px;
+    }
+
+    &__speed-box {
+      justify-content: space-between;
+    }
+
+    &__speed-info {
+      text-align: left;
+    }
+
+    &__speed-timing {
+      font-size: 30px;
+      line-height: 48px;
+      text-align: left;
+    }
+
+    &__bg-img1 {
+      top: 196px;
+      right: 68px;
+    }
+  }
+}
+
+@media (min-width: 1610px) {
+  .trade-the-world {
+    &__dashboard {
+      top: -41px;
+      right: 60px;
+      width: 804px;
+    }
+
+    &__bg-img1 {
+      top: 210px;
+      right: 360px;
+      width: 1290px;
+    }
+
+    &__bg-img2 {
+      right: 170px;
+      bottom: 20px;
+      width: 1268px;
+    }
+  }
+}
+
+/* анимация img .trade-the-world__dashboard  */
+@keyframes rotateInUpLeft {
+  0% {
+    opacity: 0;
+    transform: rotate3d(0, 0, 1, 45deg) scale3d(0.1, 0.1, 0.1);
+    transform-origin: left bottom;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale3d(1, 1, 1);
+    transform-origin: left bottom;
+  }
+}

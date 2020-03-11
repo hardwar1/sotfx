@@ -1,0 +1,152 @@
+.trade-markets {
+  position: relative;
+
+  &__images-box {
+    position: relative;
+  }
+
+  &__img-tablet {
+    width: 100%;
+  }
+
+  &__img-tel2 {
+    z-index: 5;
+  }
+
+  &__decor {
+    position: absolute;
+    z-index: -1;
+    width: 94%;
+  }
+}
+
+@media (min-width: 320px) {
+  .trade-markets {
+    &__title {
+      width: 290px;
+      margin: 50px 0 25px 15px;
+      font-size: 27px;
+      line-height: 44px;
+      text-align: center;
+    }
+
+    &__text {
+      width: 290px;
+      margin-bottom: 15px;
+      margin-left: 15px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    &__images-box {
+      width: 290px;
+    }
+
+    &__img-tablet {
+      display: none;
+    }
+
+    &__img-tel1 {
+      display: none;
+      width: 290px;
+    }
+
+    &__img-tel2 {
+      display: block;
+      width: 290px;
+    }
+
+    &__decor {
+      right: 130px;
+      bottom: 40%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .trade-markets {
+    &__title {
+      width: 360px;
+      font-size: 26px;
+      line-height: 31px;
+    }
+
+    &__text {
+      width: 300px;
+      margin-bottom: 115px;
+      font-size: 19px;
+      line-height: 25px;
+    }
+
+    &__images-box {
+      width: 738px;
+    }
+
+    &__img-tablet {
+      display: block;
+    }
+
+    &__img-tel1 {
+      position: absolute;
+      top: -325px;
+      right: 141px;
+      z-index: -1;
+      display: block;
+      width: 150px;
+    }
+
+    &__img-tel2 {
+      position: absolute;
+      top: -348px;
+      right: 9px;
+      width: 150px;
+    }
+
+    &__decor {
+      right: 250px;
+      bottom: 6%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .trade-markets {
+    &__title {
+      width: 595px;
+      margin-top: 149px;
+      font-size: 44px;
+      line-height: 59px;
+    }
+
+    &__text {
+      width: 520px;
+      margin-bottom: 103px;
+      font-size: 32px;
+      line-height: 43px;
+      text-align: left;
+    }
+
+    &__images-box {
+      width: 804px;
+    }
+
+    &__img-tel1 {
+      top: -119px;
+      right: -178px;
+      z-index: 3;
+      width: 215px;
+      margin: 0;
+    }
+
+    &__img-tel2 {
+      top: -198px;
+      right: -362px;
+      width: 215px;
+    }
+
+    &__decor {
+      right: 0;
+      bottom: -1%;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.footer {
+  padding-bottom: 82px;
+  color: #222;
+  background-color: #e5e5e5;
+
+  &__bar-wrapper {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  &-bar {
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    padding-top: 48px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    &__link {
+      display: none;
+      font-size: inherit;
+      color: inherit;
+    }
+
+    &__links-all {
+      width: 100%;
+      max-width: 536px;
+    }
+
+    &__links-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+
+  &__logo {
+    width: 136px;
+    height: 35px;
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto 67px;
+    text-align: center;
+  }
+
+  &__follow {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__soc-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 266px;
+    height: 60px;
+    margin: 0 auto 20px;
+  }
+
+  &__soc {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    background-color: #ff772b;
+    border: 0;
+    border-radius: 50%;
+    box-shadow:
+      0 4px rgba(53, 19, 4, 0.6),
+      0 3px 15px rgba(0, 0, 0, 0.4),
+      inset 0 1px rgba(255, 255, 255, 0.3),
+      inset 0 0 3px rgba(255, 255, 255, 0.5);
+    transition: all 0.2s;
+
+    &:active {
+      background-color: #fb2424;
+      box-shadow:
+        0 1px rgb(47, 22, 4),
+        0 1px 6px rgba(0, 0, 0, 0.4),
+        inset 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 0 3px rgba(255, 255, 255, 0.5);
+      transform: translate(0, 3px);
+    }
+  }
+
+  &__soc img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 17px;
+    color: #777;
+    text-align: justify;
+  }
+
+  &-extra {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    &__wrapper {
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+    &__operated-by {
+      color: #777;
+    }
+
+    &__police {
+      width: 250px;
+    }
+
+    &__span {
+      padding-right: 20px;
+      color: #ff772a;
+    }
+  }
+}

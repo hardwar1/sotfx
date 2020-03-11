@@ -1,0 +1,24 @@
+@media (min-width: 1000px) {
+  .feedback {
+    &__sub-title {
+      margin-bottom: 141px;
+    }
+    &__box {
+      padding-right: 39px;
+      margin: 0 auto 23px;
+    }
+    
+  }
+
+  .slick {
+    &-next {
+      top: 40px;
+      right: 80px;
+    }
+
+    &-prev {
+      top: 40px;
+      left: 15px;
+    }
+  }
+}

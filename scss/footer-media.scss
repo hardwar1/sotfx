@@ -1,0 +1,54 @@
+@media (min-width: 768px) {
+  .footer {
+    &-bar {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+
+      &__link {
+        display: block;
+      }
+    }
+
+    &-extra__police {
+      width: 500px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    &__wrapper {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    &__soc-wrapper {
+      margin: 0;
+    }
+
+    &__text {
+      max-width: 670px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    &__wrapper {
+      max-width: 1200px;
+    }
+
+    &-extra {
+      &__wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__all-rights {
+        text-align: right;
+      }
+    }
+  }
+}

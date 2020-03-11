@@ -1,0 +1,177 @@
+.promotion {
+  margin-top: 185px;
+
+  &__title {
+    margin-bottom: 38px;
+  }
+
+  &__sub-title {
+    width: 322px;
+    margin-bottom: 98px;
+  }
+
+  &__items-box1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+
+  &__items-box2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    background: linear-gradient(0deg, #1d1d1d -22.75%, rgba(29, 29, 29, 0) 108.75%);
+    border-radius: 30px;
+  }
+
+  &__item-title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+  }
+
+  &__item-text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #777;
+  }
+
+  &__item1 {
+    padding-top: 102px;
+
+    &__img {
+      margin-bottom: 29px;
+    }
+
+    &__title {
+      width: 235px;
+      margin-bottom: 21px;
+      font-weight: 300;
+    }
+
+    &__text {
+      width: 228px;
+    }
+  }
+
+  &__item2 {
+    padding-top: 103px;
+
+    &__img {
+      margin-bottom: 34px;
+    }
+
+    &__title {
+      width: 192px;
+      margin-bottom: 21px;
+    }
+
+    &__text {
+      width: 240px;
+    }
+  }
+
+  &__item3 {
+    padding-top: 108px;
+
+    &__img {
+      margin-bottom: 21px;
+    }
+
+    &__title {
+      width: 164px;
+      margin-bottom: 21px;
+    }
+
+    &__text {
+      width: 209px;
+    }
+  }
+
+  &__item4 {
+    padding-top: 106px;
+
+    &__img {
+      margin-bottom: 21px;
+    }
+
+    &__title {
+      width: 207px;
+      margin-bottom: 21px;
+    }
+
+    &__text {
+      width: 198px;
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .promotion {
+    &__title {
+      font-size: 40px;
+    }
+
+    &__sub-title {
+      font-size: 27px;
+    }
+
+    &__items-box2 {
+      margin-bottom: 50px;
+    }
+
+    &__item {
+      width: 290px;
+      height: 400px;
+      padding-left: 45px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .promotion {
+    &__title {
+      font-size: 44px;
+    }
+
+    &__sub-title {
+      font-size: 32px;
+    }
+
+    &__items-box2 {
+      margin-bottom: 343px;
+    }
+
+    &__item {
+      width: 339px;
+      height: 400px;
+      padding-left: 70px;
+      margin-bottom: 0;
+    }
+
+    &__item1 {
+      margin-right: 30px;
+    }
+
+    &__item3 {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .promotion {
+    &__items-box2 {
+      justify-content: flex-end;
+    }
+
+    &__item {
+      width: 370px;
+    }
+  }
+}

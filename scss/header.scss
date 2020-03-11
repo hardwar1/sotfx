@@ -1,0 +1,238 @@
+.header {
+  font-size: 16px;
+  font-weight: 500;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    min-height: 101px;
+  }
+
+  &__logo {
+    animation: flipInX 6s;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__menu-link {
+    position: relative;
+    display: inline-block;
+    padding: 14px 0;
+    transition: color 0.2s linear;
+
+    &:hover {
+      color: rgba($color: rgb(187, 14, 14), $alpha: 1);
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: -1;
+      width: calc(100% + 35px);
+      opacity: 0;
+      fill: none;
+      stroke: white;
+      stroke-dasharray: 338;
+      stroke-dashoffset: 338;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+      stroke-width: 2;
+      transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
+      transform: translate(-50%, -50%);
+    }
+
+    &--active svg {
+      stroke: #2d6c90;
+    }
+
+    &--active svg,
+    &:hover svg {
+      opacity: 1;
+      stroke-dashoffset: 0;
+      transition: opacity 0s, stroke-dashoffset .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+  }
+
+  &__login {
+    width: 142px;
+    height: 40px;
+    margin-left: 21px;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #ff2a2a;
+  }
+
+  &__lang-switch {
+    padding-left: 21px;
+    font-size: 14px;
+  }
+
+  &__lang-now {
+    transition: color 0.4s linear;
+  }
+
+  &__lang-now:hover {
+    color: rgba($color: rgb(187, 14, 14), $alpha: 1);
+  }
+
+  &__lang-list {
+    padding-left: 8px;
+    background-color: inherit;
+    border: none;
+  }
+
+  &__lang-list:hover {
+    cursor: pointer;
+  }
+
+  &__animated1, &__animated2 {
+    animation: bounceInDown 1s;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__block {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__menu-toggle {
+      display: none;
+    }
+
+    &__login {
+      margin-left: 259px;
+    }
+
+    &__menu {
+      width: 738px;
+    }
+
+    &__list {
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    &__login {
+      margin-left: 21px;
+    }
+
+    &__logo {
+      order: -2;
+    }
+
+    &__menu {
+      order: -1;
+      width: 550px;
+      margin-left: 90px;
+    }
+  }
+}
+
+
+// анимация остальных пунктов меню header__animated2
+@keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+} // анимация остальных пунктов меню header__animated2
+
+//анимация header__logo
+@keyframes flipInX {
+  0% {
+    opacity: 0;
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+  }
+
+  13% {
+    opacity: 1;
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  20% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+  }
+
+  27% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  33% {
+    transform: perspective(400px);
+  }
+
+  43% {
+    opacity: 1;
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+  }
+
+  66% {
+    opacity: 0;
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+  }
+
+  67% {
+    opacity: 0;
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    opacity: 1;
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  86% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+  }
+
+  93% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    transform: perspective(400px);
+  }
+} /* анимация header__logo */

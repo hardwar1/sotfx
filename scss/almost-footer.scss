@@ -1,0 +1,46 @@
+.almost-footer {
+  position: relative;
+  height: 377px;
+  margin-bottom: 72px;
+  overflow: hidden;
+
+  &__info {
+    position: relative;
+    max-width: 585px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-size: 48px;
+    line-height: 59px;
+  }
+
+  &__text {
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__img1 {
+    position: absolute;
+    top: -10%;
+    right: 0;
+    transform: translateX(100%);
+  }
+
+  &__img2 {
+    position: absolute;
+    top: -10%;
+    right: 0;
+    transform: translateX(200%);
+  }
+
+  &__bg {
+    position: absolute;
+    top: 50%;
+    right: -48%;
+    z-index: -1;
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+  }
+}
